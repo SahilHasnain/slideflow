@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "naat-collection",
-    "slug": "naat-collection",
+    "name": "Slideflow",
+    "slug": "slideflow",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "naatcollection",
+    "scheme": "slideflow",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
