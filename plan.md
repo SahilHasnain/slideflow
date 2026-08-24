@@ -1,4 +1,4 @@
-# Slideflow — Plan
+# Slidely — Plan
 
 ## Positioning
 

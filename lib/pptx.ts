@@ -363,9 +363,9 @@ const LAYOUT_RELS = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </Relationships>`;
 
 const THEME = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<a:theme xmlns:a="${A}" name="Slideflow">
+<a:theme xmlns:a="${A}" name="Slidely">
   <a:themeElements>
-    <a:clrScheme name="Slideflow">
+    <a:clrScheme name="Slidely">
       <a:dk1><a:sysClr val="windowText" lastClr="000000"/></a:dk1>
       <a:lt1><a:sysClr val="window" lastClr="FFFFFF"/></a:lt1>
       <a:dk2><a:srgbClr val="1F2937"/></a:dk2>
@@ -379,11 +379,11 @@ const THEME = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
       <a:hlink><a:srgbClr val="0563C1"/></a:hlink>
       <a:folHlink><a:srgbClr val="954F72"/></a:folHlink>
     </a:clrScheme>
-    <a:fontScheme name="Slideflow">
+    <a:fontScheme name="Slidely">
       <a:majorFont><a:latin typeface="Arial"/><a:ea typeface=""/><a:cs typeface=""/></a:majorFont>
       <a:minorFont><a:latin typeface="Arial"/><a:ea typeface=""/><a:cs typeface=""/></a:minorFont>
     </a:fontScheme>
-    <a:fmtScheme name="Slideflow">
+    <a:fmtScheme name="Slidely">
       <a:fillStyleLst>
         <a:solidFill><a:schemeClr val="phClr"/></a:solidFill>
         <a:gradFill rotWithShape="1"><a:gsLst>
@@ -423,8 +423,8 @@ const THEME = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 const CORE_PROPS = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <dc:title>Slideflow Presentation</dc:title>
-  <dc:creator>Slideflow</dc:creator>
+  <dc:title>Slidely Presentation</dc:title>
+  <dc:creator>Slidely</dc:creator>
   <dcterms:created xsi:type="dcterms:W3CDTF">2026-01-01T00:00:00Z</dcterms:created>
   <dcterms:modified xsi:type="dcterms:W3CDTF">2026-01-01T00:00:00Z</dcterms:modified>
 </cp:coreProperties>`;
@@ -432,14 +432,14 @@ const CORE_PROPS = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 function appProps(slideCount: number): string {
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
-  <Application>Slideflow</Application>
+  <Application>Slidely</Application>
   <Slides>${slideCount}</Slides>
   <Notes>0</Notes>
   <HiddenSlides>0</HiddenSlides>
   <MMClips>0</MMClips>
   <ScaleCrop>false</ScaleCrop>
   <HeadingPairs><vt:vector size="1" baseType="variant"><vt:variant><vt:lpstr>Theme</vt:lpstr></vt:variant><vt:variant><vt:i4>1</vt:i4></vt:variant></vt:vector></HeadingPairs>
-  <TitlesOfParts><vt:vector size="1" baseType="lpstr"><vt:lpstr>Slideflow</vt:lpstr></vt:vector></TitlesOfParts>
+  <TitlesOfParts><vt:vector size="1" baseType="lpstr"><vt:lpstr>Slidely</vt:lpstr></vt:vector></TitlesOfParts>
 </Properties>`;
 }
 

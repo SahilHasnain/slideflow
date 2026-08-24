@@ -1,4 +1,4 @@
-# Slideflow AI Gateway
+# Slidely AI Gateway
 
 This Cloudflare Worker keeps Gemini and Groq API keys off the mobile app. It tries Gemini first, falls back to Groq on temporary provider failures, and returns a controlled error so the app can use its local fallback.
 

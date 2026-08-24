@@ -18,7 +18,7 @@ export default function HomeScreen() {
             <Ionicons name="albums" size={22} color="white" />
           </View>
           <View>
-            <Text className="text-2xl font-extrabold text-zinc-900">Slideflow</Text>
+            <Text className="text-2xl font-extrabold text-zinc-900">Slidely</Text>
             <Text className="text-sm text-zinc-500">
               A presentation in 5 minutes on your phone
             </Text>
