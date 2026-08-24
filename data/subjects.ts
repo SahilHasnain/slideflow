@@ -1,9 +1,9 @@
 import type { Subject, Template } from "@/types";
 
 export const SUBJECTS: Subject[] = [
-  { id: "law", name: "Law", field: "law", emoji: "⚖️" },
   { id: "medical", name: "Medical", field: "medical", emoji: "🩺" },
   { id: "engineering", name: "Engineering", field: "engineering", emoji: "⚙️" },
+  { id: "law", name: "Law", field: "law", emoji: "⚖️" },
   { id: "mba", name: "Business / MBA", field: "mba", emoji: "📈" },
   { id: "bca", name: "Computer Science", field: "bca", emoji: "💻" },
 ];
