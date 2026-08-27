@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Slideflow</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --fg: #e5e5e5;
+      --muted: #a1a1aa;
+      --border: #27272a;
+      --accent: #6d28d9;
+      --surface: #18181b;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+      padding: 3rem 1.5rem 5rem;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+    header { margin-bottom: 3rem; }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .updated {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      color: #fff;
+    }
+    p, li {
+      font-size: 0.9375rem;
+      color: var(--fg);
+      margin-bottom: 0.75rem;
+    }
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    li { margin-bottom: 0.5rem; }
+    a {
+      color: #a78bfa;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #fafafa;
+        --fg: #18181b;
+        --muted: #71717a;
+        --border: #e4e4e7;
+        --surface: #fff;
+      }
+      h2 { color: #09090b; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: August 27, 2026</p>
+    </header>
+
+    <p>
+      Slideflow is a mobile app that helps you create presentations using AI.
+      Your privacy matters — this policy explains what data is handled and why.
+    </p>
+
+    <h2>Data Stored Locally</h2>
+    <p>
+      All presentation data — outlines, slides, templates, and exported files — is
+      stored entirely on your device using local storage. Nothing is uploaded to a
+      server or shared with anyone unless you explicitly export or share a file.
+    </p>
+
+    <h2>AI Feature</h2>
+    <p>
+      When you use the AI outline generation feature, your topic, audience, and tone
+      inputs are sent to a Cloudflare Worker endpoint which forwards the request to a
+      third-party AI provider. The data sent includes:
+    </p>
+    <ul>
+      <li>Topic / presentation title</li>
+      <li>Target audience description</li>
+      <li>Desired tone</li>
+      <li>The generated outline is sent back to your device only</li>
+    </ul>
+    <p>
+      This data is <strong>not logged, stored, or tracked</strong> on the worker or any
+      intermediary service. Requests are stateless and discarded immediately after the
+      AI response is returned.
+    </p>
+
+    <h2>Network Requests</h2>
+    <p>
+      Your device connects to the following endpoints when you use Slideflow:
+    </p>
+    <ul>
+      <li><strong>AI endpoint</strong> — for outline generation (as described above)</li>
+      <li><strong>Expo EAS services</strong> — standard Expo app functionality (authentication, updates)</li>
+    </ul>
+    <p>
+      No personal information beyond what is explicitly entered by you in the app is
+      transmitted.
+    </p>
+
+    <h2>Analytics &amp; Tracking</h2>
+    <p>
+      Slideflow does <strong>not</strong> collect analytics, usage metrics, crash data,
+      advertising identifiers, or any form of user tracking. There are no analytics SDKs,
+      ad networks, or third-party tracking scripts embedded in the app.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      The only third-party service used is:
+    </p>
+    <ul>
+      <li><strong>Cloudflare Workers</strong> — hosts the AI proxy endpoint</li>
+      <li><strong>Expo / EAS</strong> — app infrastructure (builds, updates, authentication)</li>
+    </ul>
+    <p>
+      These services operate under their own privacy policies. Slideflow does not share
+      any data with them beyond what is strictly required for their functionality.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      Slideflow is not directed at children under 13. We do not knowingly collect
+      information from children.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      This policy may be updated from time to time. Changes will be reflected on this page
+      with an updated date. Continued use of the app after changes constitutes acceptance
+      of the revised policy.
+    </p>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>
+        Questions about this privacy policy? Reach out at
+        <a href="https://github.com/SahilHasnain/slideflow/issues">GitHub Issues</a>
+        or contact the developer directly.
+      </p>
+    </div>
+
+    <footer class="footer">
+      Slideflow &mdash; built by <a href="https://github.com/SahilHasnain">Sahil Hasnain</a>
+    </footer>
+  </div>
+</body>
+</html>
